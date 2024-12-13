@@ -32,3 +32,11 @@ If you have suggestions to improve an exercise, ideas for a new exercise, or not
 - Unless listed in the self-check section, do not worry about getting the exact pixel value for things like margin, padding and font size. These exercises are intended to test your knowledge of CSS, not your ability to guess that a screenshot is using `font: sans-serif bold 16px` or that the margin is _exactly_ `42px`.
 - You may need to add some elements to your HTML to get things into the right spot. (For the first few exercises, we make it explicit when this needs to happen.)
 - You may need to add more selectors to your CSS file. The first few exercises have almost everything already done for you, but as you progress, you'll find that you need to add more and more selectors to get the correct result.
+
+
+# Anotaciones buenas practicas del lado del front end --  With Benjamin Destefanis (Full-Stack Developer)
+
+## Alta prioridad
+
+1. Minimazar el numero de frames (Use iframes solo si no tiene ninguna otra posibilidad técnica. Intenta evitar los iframes tanto como puedas. Los Iframes no solo son malos para el rendimiento, sino también para la accesibilidad y la usabilidad. Los iframes tampoco están indexados por los motores de búsqueda.)
+2. Minimizar CSS - Remover Comentarios -- Espacios en blanco -- ()
