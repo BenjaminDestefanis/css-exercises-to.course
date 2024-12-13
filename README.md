@@ -39,4 +39,12 @@ If you have suggestions to improve an exercise, ideas for a new exercise, or not
 ## Alta prioridad
 
 1. Minimazar el numero de frames (Use iframes solo si no tiene ninguna otra posibilidad técnica. Intenta evitar los iframes tanto como puedas. Los Iframes no solo son malos para el rendimiento, sino también para la accesibilidad y la usabilidad. Los iframes tampoco están indexados por los motores de búsqueda.)
-2. Minimizar CSS - Remover Comentarios -- Espacios en blanco -- ()
+2. Minimizar CSS - Remover Comentarios -- Espacios en blanco -- (Cuando se minifican los archivos CSS, el contenido se carga más rápido y se envían menos datos al cliente. Es importante minimizar siempre los archivos CSS en producción. Es beneficioso para el usuario, ya que es para cualquier empresa que quiera reducir los costos de ancho de banda y reducir el uso de recursos.
+Use herramientas para minimizar sus archivos automáticamente antes o durante su compilación o implementación.)
+3. Los archivos CSS deben no bloquearse para evitar que el DOM tome tiempo para cargarse. -- (Los archivos CSS pueden bloquear la carga de la página y retrasar la representación de su página. Usando preload en realidad, puede cargar los archivos CSS antes de que el navegador comience a mostrar el contenido de la página.
+Necesitas agregar el rel atributo con el valor de precarga y añadir as="style" en el <link> elemento.)
+4. CSS Critico en Linea -- (El CSS crítico (o “sobre el fold”) recopila todo el CSS utilizado para representar la parte visible de la página. Está incrustado antes de su llamada CSS principal y entre <style></style> en una sola línea (minificada si es posible).
+
+La incorporación de CSS crítico ayuda a acelerar la representación de las páginas web reduciendo el número de solicitudes al servidor.
+
+Genera el CSS crítico con herramientas online o usando un plugin como el que desarrolló Addy Osmani.)
